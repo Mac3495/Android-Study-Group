@@ -5,52 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <TextView
-        android:background="@color/colorRed"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:gravity="center"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp"
-        android:text="Android Study Group! Clase número 2"/>
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo"/>
 
-    <TextView
-        android:background="@color/colorBlue"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
-        android:text="Android Study Group!"/>
-
-    <TextView
-        android:background="@color/colorGreen"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:text="Android Study"/>
-
-    <LinearLayout
+    <EditText
+        android:id="@+id/edit_text_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:hint="User"
+        android:layout_margin="30dp"/>
 
-        <TextView
-            android:background="@color/colorBlue"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="Android Study Group!"/>
+    <EditText
+        android:id="@+id/edit_text_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"/>
 
-        <TextView
-            android:background="@color/colorOrange"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="Android Study Group!"/>
-
-        <TextView
-            android:background="@color/colorRed"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="Android Study Group!"/>
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/colorOrange"/>
 
 </LinearLayout>
