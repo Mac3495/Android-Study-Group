@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".PokemonActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photo_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
